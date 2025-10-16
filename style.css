@@ -4,16 +4,20 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
-.aaa {
+h1 {
+    height: 1px;
+    width: 1px;
+}
+.header__content {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.aaa img {
+.header__content img {
     width: 100%;
 }
-.aaa .more_inf {
+.header__content .header-link {
     font-family: fantasy, cursive;
 }
 
@@ -129,13 +133,13 @@ button.delete img:hover {
 
 /* Completed */
 ul#completed-tasks label {
-    text-decoration: line-through
+    text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
 ul li input[type=text] {
-    display:none
+    display: none;
 }
 
 ul li.editMode input[type=text] {
