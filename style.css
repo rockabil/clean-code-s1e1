@@ -4,28 +4,34 @@ body {
     color: #333;
     font-family: "Lato", sans-serif;
 }
+
 h1 {
     display: none;
     height: 1px;
     width: 1px;
 }
+
 header {
     width: 100%;
 }
+
 .header__content {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
+
 .header__content img {
     width: 100%;
 }
+
 .header__content .header-link {
     align-self: flex-end;
     font-family: "Fantasy", cursive;    
     text-decoration: none;
 }
+
 .header-link:hover {
     text-decoration: underline;
 }
@@ -36,14 +42,17 @@ header {
     width: 90%;
     }
 }
+
 .main {
     display: block;
     width: 500px;
     margin: 0 auto;
 }
+
 .todo-form {
     margin-bottom: 30px;
 }
+
 .todo-form__input {
     width: 56%;
     display: inline-block;
@@ -59,25 +68,30 @@ header {
     font-family: "Lato", sans-serif;
     color: #888;
 }
+
 .todo-form__row {
   display: flex;
 }
+
 .todo-list__items,
 .completed-list__items {
     margin:0;
     padding: 0px;
 }
+
 .todo-item,
 .todo-list__title,
 .completed-list__title {
     list-style:none;
 }
+
 .todo-form__input,
 .todo-item__input,
 .todo-form__button,
 .todo-item__button {
     outline:none;
 }
+
 .todo-form__button,
 .todo-item__button {
     background: none;
@@ -88,10 +102,12 @@ header {
     font-family: "Lato", sans-serif;
     cursor: pointer;
 }
+
 .todo-form__button:hover 
 .todo-item__button:hover {
     color: #3a3A3a;
 }
+
 /* Heading */
 .todo-list__title,
 .completed-list__title,
@@ -104,6 +120,7 @@ header {
     margin: 0;
     text-transform: uppercase;
 }
+
 .todo-item__input {
     margin: 0;
     font-size: 18px;
@@ -116,6 +133,7 @@ header {
     font-family: "Lato", sans-serif;
     color: #888;
 }
+
 .todo-item__input:focus {
     color: #333;
 }
@@ -125,6 +143,7 @@ header {
     display: block;
     margin: 0 0 20px;
 }
+
 #new-task {
     width: 318px;
 }
@@ -138,6 +157,7 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 .todo-item > * {
     vertical-align: middle;
 }
@@ -145,6 +165,7 @@ header {
 .todo-item__checkbox {
     margin: 0 10px;
 }
+
 .todo-item__label {
     padding-left: 10px;
     box-sizing: border-box;
@@ -152,14 +173,17 @@ header {
     width: 226px;
     flex-grow: 1;
 }
+
 .todo-item__input {
     width: 226px;
 }
+
 .todo-item__button--delete img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
+
 .todo-item__button--delete img:hover {
     transform: rotateZ(0);
 }
