@@ -14,7 +14,7 @@ const incompleteTaskHolder = document.getElementById("incompleteTasks");//ul of 
 const completedTasksHolder = document.getElementById("completed-tasks");//completed-tasks
 
 //New task list item
-const createNewTaskElement = function(taskString){
+const createNewTaskElement = function(taskString) {
     const listItem = document.createElement("li");
     //input (checkbox)
     const checkBox = document.createElement("input");//checkbx
@@ -135,7 +135,7 @@ addButton.onclick = addTask;
 addButton.addEventListener("click", addTask);
 addButton.addEventListener("click", ajaxRequest);
 
-const bindTaskEvents = function(taskListItem,checkBoxEventHandler){
+const bindTaskEvents = function(taskListItem,checkBoxEventHandler) {
     console.log("bind list item events");
 //select ListItems children
     const checkBox = taskListItem.querySelector(".todo-item__checkbox");
