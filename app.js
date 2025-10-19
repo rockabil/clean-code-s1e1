@@ -41,10 +41,10 @@ const createNewTaskElement = function(taskString){
     editInput.className = "todo-item__input";
 
     editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
-    editInput.className = "todo-item__button todo-item__button--edit";
+    editButton.className = "todo-item__button todo-item__button--edit";
     
-    deleteButton.className = "delete";
-    deleteButtonImg.src = './remove.svg';
+    deleteButton.className = "todo-item__button todo-item__button--delete";
+    deleteButtonImg.src = './img/svg/remove.svg';
     deleteButtonImg.alt = "Delete task";
     deleteButton.appendChild(deleteButtonImg);
 
@@ -80,7 +80,7 @@ const editTask = function() {
     const editInput = listItem.querySelector(".todo-item__input");
     const label = listItem.querySelector(".todo-item__label");
     const editBtn = listItem.querySelector(".todo-item__button--edit");
-    const containsClass = listItem.classList.contains("todo-item__edit--mode");
+    const containsClass = listItem.classList.contains(".todo-item__edit--mode");
     //If class of the parent is .editmode
     if (containsClass) {
         //switch to .editmode
@@ -92,7 +92,7 @@ const editTask = function() {
         editBtn.innerText = "Save";
     }
     //toggle .editmode on the parent.
-    listItem.classList.toggle("todo-item__edit--mode");
+    listItem.classList.toggle(".todo-item__edit--mode");
 };
 
 //Delete task.
@@ -158,7 +158,7 @@ for (let i = 0; i < incompleteTaskHolder.children.length; i += 1) {
 }
 
 //cycle over completedTasksHolder ul list items
-for (letr i = 0; i < completedTasksHolder.children.length; i += 1) {
+for (let i = 0; i < completedTasksHolder.children.length; i += 1) {
     //bind events to list items chldren(tasksIncompleted)
     bindTaskEvents(completedTasksHolder.children[i], taskIncomplete);
 }

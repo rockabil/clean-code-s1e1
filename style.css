@@ -199,7 +199,7 @@ header {
     display: none;
 }
 
-.todo-item--edit-mode .todo-item__input {
+.todo-item__edit--mode .todo-item__input {
     display:inline-block;
     width:224px
 }
